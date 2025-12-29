@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f9fafc;
+    color: #222;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background: #0b1f3a;
+    color: white;
+}
+
+.btn {
+    background: #ffc107;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+}
+
+/* Hero */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* Contact */
+.contact {
+    padding: 20px;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
